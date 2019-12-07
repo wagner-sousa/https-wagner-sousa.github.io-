@@ -28,7 +28,7 @@
           <div id="fb-root"></div>
           <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
-          <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="sideNav">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
                <a class="navbar-brand js-scroll-trigger" href="#page-top">
                     <span class="d-none d-lg-block">
                          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
@@ -67,8 +67,7 @@
                          </span>
                          <h1 class="mb-0">Wagner Sousa
                          </h1>
-                         <div class="subheading mb-5">Desenvolvedor Full-Stack
-                         </div>
+                         <div class="subheading mb-5">Desenvolvedor &#8226; Fotógrafo &#8226; Social Media</div>
                          <div class="subheading mb-3 text-decoration-none text-dark">
                               <i class="fa fa-map-pin">&nbsp;</i>
                               <a href="#" data-toggle="modal" data-target="#maps" class="text-decoration-none text-dark">
@@ -82,19 +81,23 @@
 
                          <div class="container">
                               <div class="social-icons row justify-content-center">
-                                   <a href="https://www.linkedin.com/in/wagner-sousa-developer/" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-secondary">
+                                   <a href="https://www.linkedin.com/in/wagner-sousa-developer/" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="Linkedin-in">
                                         <i class="fa fa-linkedin"></i><span class="d-none">   |  Linkedin-in</span>
                                    </a>
-                                   <a href="https://github.com/wagner-sousa" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-secondary">
+                                   <a href="https://github.com/wagner-sousa" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark"  data-toggle="tooltip" title="GitHub">
                                         <i class="fa fa-github"></i><span class="d-none">   |  GitHub</span>
                                    </a>
-                                   <a href="https://www.facebook.com/wagner.sousa.developer" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-secondary">
+                                   <a href="https://gitlab.com/wagner.sousa" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="GitLab">
+                                        <i class="fa fa-gitlab"></i><span class="d-none">   |  GitLab</span>
+                                   </a>
+                                   <a href="https://www.facebook.com/wagner.sousa.developer" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="Facebook">
                                         <i class="fa fa-facebook-f"></i><span class="d-none">   |  Facebook</span>
                                    </a>
-                                   <a href="doc.pdf" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-secondary">
-                                        <i class="fa fa-file-text-o"></i><span class="d-none">   |  Curriculum</span>
+                                   <a href="doc.pdf" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="Baixe o meu Currículum">
+                                        <i class="fa fa-file-text-o"></i>
+                                        <span class="d-none">   |  Curriculum</span>
                                    </a>
-                                   <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5585991013648" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-secondary">
+                                   <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5585991013648" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="Whatsapp">
                                         <i class="fa fa-whatsapp"></i><span class="d-none">   |  Whatsapp</span>
                                    </a>
                               </div>
@@ -110,7 +113,7 @@
 
                          <div class="album">
                               <div class="container">
-                                   <div class="subheading mb-3 border-bottom"><i class="fa fa-globe">&nbsp;</i>WEB</div>
+                                   <div class="subheading text-dark mb-3 border-bottom"><i class="fa fa-globe">&nbsp;</i>WEB</div>
                                    <div class="row">
                                         <div class="col-md-4">
                                              <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/site-chiara-luce/" target="_blank">
@@ -136,6 +139,17 @@
                                                   <img src="img/003.png" class="card-img">
                                                   <div class="card-img-overlay">
                                                        <h5 class="card-title text-white">Tree Framework</h5>
+                                                       <small class="card-text badge badge-pill badge-danger small text-uppercse lead">
+                                                            <i class="fa fa-th-large"></i> framework
+                                                       </small>
+                                                  </div>
+                                             </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/dinamo/" target="_blank">
+                                                  <img src="img/009.png" class="card-img">
+                                                  <div class="card-img-overlay">
+                                                       <h5 class="card-title text-white">Local Server Folder</h5>
                                                        <small class="card-text badge badge-pill badge-danger small text-uppercse lead">
                                                             <i class="fa fa-th-large"></i> framework
                                                        </small>
@@ -390,13 +404,34 @@
                <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
                     <div class="w-100">
                          <h2 class="mb-5"><i class="fa fa-comment">&nbsp;&nbsp;</i>Contato</h2>
-                         <form action="https://formspree.io/wagner.fernandes.sousa@outlook.com" method="POST" class="col-md-5">
-                              <input name="name" type="text" placeholder="Nome" class="form-control mb-2 rounded-0">
-                              <input name="phone" type="tel" placeholder="Telefone" class="form-control mb-2 rounded-0">
-                              <input name="email" type="email" placeholder="Email" class="form-control mb-2 rounded-0">
-                              <textarea name="message" placeholder="Mensagem" class="form-control mb-2 rounded-0"></textarea>
+                         <form action="https://formspree.io/wagner.fernandes.sousa@outlook.com" method="POST" class="col-md-5 needs-validation" novalidate>
+
+                              <input name="name" type="text" placeholder="Nome" class="form-control mb-2 rounded-0" required>
+                              <input name="phone" type="tel" placeholder="Telefone" class="form-control mb-2 rounded-0" required>
+                              <input name="email" type="email" placeholder="Email" class="form-control mb-2 rounded-0" required>
+                              <textarea name="message" placeholder="Mensagem" class="form-control mb-2 rounded-0" required></textarea>
                               <button type="submit" class="btn btn-secondary rounded-0">Enviar</button>
                          </form>
+                         <script>
+                              // Example starter JavaScript for disabling form submissions if there are invalid fields
+                              (function() {
+                                   'use strict';
+                                   window.addEventListener('load', function() {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function(form) {
+                                             form.addEventListener('submit', function(event) {
+                                                  if (form.checkValidity() === false) {
+                                                       event.preventDefault();
+                                                       event.stopPropagation();
+                                                  }
+                                                  form.classList.add('was-validated');
+                                             }, false);
+                                        });
+                                   }, false);
+                              })();
+                         </script>
                     </div>
                </section>
 
@@ -419,7 +454,11 @@
           <!-- Bootstrap core JavaScript -->
           <script src="vendor/jquery/jquery.min.js"></script>
           <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+          <script>
+               $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+               })
+          </script>
           <!-- Plugin JavaScript -->
           <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
