@@ -1,470 +1,657 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-     <head>
+<head>
 
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-          <meta name="description" content="">
-          <meta name="author" content="">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="description" content="">
+     <meta name="author" content="">
 
-          <title>Portifólio &#8226; Wagner Sousa </title>
+     <title>Portifólio &#8226; Wagner Sousa </title>
 
-          <!-- Bootstrap core CSS -->
-          <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Bootstrap core CSS -->
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-          <!-- Custom fonts for this template -->
-          <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-          <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <!-- Custom fonts for this template -->
+     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-          <!-- Custom styles for this template -->
-          <link href="css/resume.min.css" rel="stylesheet">
+     <!-- Custom styles for this template -->
+     <link href="css/resume.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+     <style>
+          #carousel-inner .carousel-item > img {
+               height:500px;
+          }
+          .carousel {
+               height:500px;
+          }
+     </style>
 
-     </head>
+</head>
 
-     <body id="page-top">
-          <!-- Load Facebook SDK for JavaScript -->
-          <div id="fb-root"></div>
-          <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<body id="page-top">
+     <!-- Load Facebook SDK for JavaScript -->
+     <div id="fb-root"></div>
+     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
-               <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    <span class="d-none d-lg-block">
-                         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+               <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+               </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav">
+                    <li class="nav-item">
+                         <a class="nav-link js-scroll-trigger" href="#about"><i
+                                   class="fa fa-info-circle">&nbsp;&nbsp;</i>Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link js-scroll-trigger" href="#experience"><i
+                                   class="fa fa-puzzle-piece">&nbsp;&nbsp;</i>Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link js-scroll-trigger" href="#education"><i
+                                   class="fa fa-graduation-cap">&nbsp;&nbsp;</i>Formação</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link js-scroll-trigger" href="#skills"><i
+                                   class="fa fa-certificate">&nbsp;&nbsp;</i>Conhecimentos</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link js-scroll-trigger" href="#interests"><i
+                                   class="fa fa-comments">&nbsp;&nbsp;</i>Contato</a>
+                    </li>
+               </ul>
+          </div>
+     </nav>
+
+     <div class="container-fluid p-0">
+
+          <section class="resume-section p-3 p-lg-5 d-flex align-items-center text-center" id="about">
+               <div class="w-100">
+                    <span class="d-block d-md-none">
+                         <img class="img-fluid img-profile rounded-circle mx-auto mb-2 w-50" src="img/profile.jpg"
+                              alt="">
                     </span>
-               </a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                         <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-info-circle">&nbsp;&nbsp;</i>Sobre</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#experience"><i class="fa fa-cubes">&nbsp;&nbsp;</i>Projetos</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#education"><i class="fa fa-graduation-cap">&nbsp;&nbsp;</i>Formação</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#skills"><i class="fa fa-certificate">&nbsp;&nbsp;</i>Habilidades</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link js-scroll-trigger" href="#interests"><i class="fa fa-comment">&nbsp;&nbsp;</i>Contato</a>
-                         </li>
-                    </ul>
-               </div>
-          </nav>
+                    <h1 class="mb-0">Wagner Sousa</h1>
+                    <div class="subheading mb-5">Desenvolvedor &#8226; Fotógrafo &#8226; Social Media</div>
+                    <div class="subheading mb-3 text-decoration-none text-dark">
+                         <i class="fa fa-phone">&nbsp;</i> (47) 99123.3038 | (85) 99101.3648<br />
+                         <i class="fa fa-envelope">&nbsp;</i><a href="mailto:name@email.com"
+                              class="text-decoration-none text-dark">wagner.fernandes.sousa@outlook.com</a>
+                    </div>
+                    <p class="lead mb-5">Sou formado em Técnico de Informática com experiência em suporte técnico,
+                         desenvolvimento de sites e comunicação em mídias sociais, fotografia, e serviços
+                         administrativos.</p>
 
-          <div class="container-fluid p-0">
-
-               <section class="resume-section p-3 p-lg-5 d-flex align-items-center text-center" id="about">
-                    <div class="w-100">
-                         <span class="d-block d-md-none">
-                              <img class="img-fluid img-profile rounded-circle mx-auto mb-2 w-50" src="img/profile.jpg" alt="">
-                         </span>
-                         <h1 class="mb-0">Wagner Sousa
-                         </h1>
-                         <div class="subheading mb-5">Desenvolvedor &#8226; Fotógrafo &#8226; Social Media</div>
-                         <div class="subheading mb-3 text-decoration-none text-dark">
-                              <i class="fa fa-map-pin">&nbsp;</i>
-                              <a href="#" data-toggle="modal" data-target="#maps" class="text-decoration-none text-dark">
-                                   Rua dos Crisântemos, Itoupavazinha - Blumenau SC
-                              </a>
-                              <br/>
-                              <i class="fa fa-phone">&nbsp;</i> (47) 99123.3038 | (85) 99101.3648<br/>
-                              <i class="fa fa-envelope">&nbsp;</i><a href="mailto:name@email.com" class="text-decoration-none text-dark">wagner.fernandes.sousa@outlook.com</a>
+                    <div class="container">
+                         <div class="social-icons row justify-content-center" id="social-icons">
                          </div>
-                         <p class="lead mb-5">Sou formado em Técnico de Informática com experiência em suporte técnico, desenvolvimento de sites e comunicação em mídias sociais, fotografia, e serviços administrativos, adquiri a maioria dos meus conhecimentos de forma independente.</p>
+                    </div>
+               </div>
+          </section>
 
+          <hr class="m-0">
+
+          <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+               <div class="w-100">
+                    <h2 class="mb-5"><i class="fa fa-puzzle-piece">&nbsp;&nbsp;</i>Projetos</h2>
+
+                    <div class="album">
                          <div class="container">
-                              <div class="social-icons row justify-content-center">
-                                   <a href="https://www.linkedin.com/in/wagner-sousa-developer/" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="Linkedin-in">
-                                        <i class="fa fa-linkedin"></i><span class="d-none">   |  Linkedin-in</span>
-                                   </a>
-                                   <a href="https://github.com/wagner-sousa" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark"  data-toggle="tooltip" title="GitHub">
-                                        <i class="fa fa-github"></i><span class="d-none">   |  GitHub</span>
-                                   </a>
-                                   <a href="https://gitlab.com/wagner.sousa" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="GitLab">
-                                        <i class="fa fa-gitlab"></i><span class="d-none">   |  GitLab</span>
-                                   </a>
-                                   <a href="https://www.facebook.com/wagner.sousa.developer" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="Facebook">
-                                        <i class="fa fa-facebook-f"></i><span class="d-none">   |  Facebook</span>
-                                   </a>
-                                   <a href="doc.pdf" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="Baixe o meu Currículum">
-                                        <i class="fa fa-file-text-o"></i>
-                                        <span class="d-none">   |  Curriculum</span>
-                                   </a>
-                                   <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5585991013648" target="_blank" class="mx-1 mb-3 col-md-auto rounded-pill bg-dark" data-toggle="tooltip" title="Whatsapp">
-                                        <i class="fa fa-whatsapp"></i><span class="d-none">   |  Whatsapp</span>
-                                   </a>
+                              <div class="subheading text-dark mb-3 border-bottom"><i class="fa fa-globe">&nbsp;</i>WEB
+                              </div>
+                              <div class="row" id="portifolio-web"></div>
+                         </div>
+                    </div>
+                    <div class="album pb-5">
+                         <div class="container">
+                              <div class="subheading text-dark mb-3 border-bottom"><i
+                                        class="fa fa-camera">&nbsp;</i>FOTOGRAFIA
+                              </div>
+                              <div class="card-columns portifolio-photo">
+                                   <div class="" id="portifolio-photo"></div>
                               </div>
                          </div>
                     </div>
-               </section>
 
-               <hr class="m-0">
-
-               <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-                    <div class="w-100">
-                         <h2 class="mb-5"><i class="fa fa-cubes">&nbsp;&nbsp;</i>Projetos</h2>
-
-                         <div class="album">
-                              <div class="container">
-                                   <div class="subheading text-dark mb-3 border-bottom"><i class="fa fa-globe">&nbsp;</i>WEB</div>
-                                   <div class="row">
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/site-chiara-luce/" target="_blank">
-                                                  <img src="img/001.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">Projeto Chiara Luce</h5>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/appHashGame/" target="_blank">
-                                                  <img src="img/002.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">Hash Game</h5>
-                                                       <small class="card-text badge badge-pill badge-success small text-uppercse lead">
-                                                            <i class="fa fa-android"></i> apk
-                                                       </small>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/tree-framework/" target="_blank">
-                                                  <img src="img/003.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">Tree Framework</h5>
-                                                       <small class="card-text badge badge-pill badge-danger small text-uppercse lead">
-                                                            <i class="fa fa-th-large"></i> framework
-                                                       </small>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://github.com/wagner-sousa/local-server-folder" target="_blank">
-                                                  <img src="img/009.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">Local Server Folder</h5>
-                                                       <small class="card-text badge badge-pill badge-danger small text-uppercse lead">
-                                                            <i class="fa fa-th-large"></i> framework
-                                                       </small>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/JFADMIN/" target="_blank">
-                                                  <img src="img/004.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">JF Administradora</h5>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/StarkRH" target="_blank">
-                                                  <img src="img/005.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">Stark RH</h5>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/ProjectBlog" target="_blank">
-                                                  <img src="img/006.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">Blog</h5>
-                                                       <small class="card-text badge badge-pill badge-info small text-uppercse lead">
-                                                            <i class="fa fa-graduation-cap"></i> avaliação
-                                                       </small>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/projeto-glass/" target="_blank">
-                                                  <img src="img/007.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">Projeto Glass</h5>
-                                                       <small class="card-text badge badge-pill badge-info small text-uppercse lead">
-                                                            <i class="fa fa-graduation-cap"></i> avaliação
-                                                       </small>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/dinamo/" target="_blank">
-                                                  <img src="img/008.png" class="card-img">
-                                                  <div class="card-img-overlay">
-                                                       <h5 class="card-title text-white">Dinamo</h5>
-                                                       <small class="card-text badge badge-pill badge-info small text-uppercse lead">
-                                                            <i class="fa fa-graduation-cap"></i> avaliação
-                                                       </small>
-                                                       <small class="card-text badge badge-pill badge-warning small text-uppercse lead">
-                                                            <i class="fa fa-refresh"></i> update
-                                                       </small>
-                                                  </div>
-                                             </a>
-                                        </div>
-                                   </div>
+                    <div class="album pb-5">
+                         <div class="container">
+                              <div class="subheading text-dark mb-3 border-bottom"><i
+                                        class="fa fa-share-alt">&nbsp;</i>SOCIAL MEDIA</div>
+                              <div class="card-columns portifolio-media">
+                                   <div class="" id="portifolio-media"></div>
                               </div>
                          </div>
-                         <div class="album pb-5">
-                              <div class="container">
-                                   <div class="subheading mb-3 border-bottom"><i class="fa fa-camera">&nbsp;</i>FOTOGRAFIA</div>
-                                   <div class="row">
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="#" target="_blank">
-                                                  <img src="img/photo-001.jpg" class="card-img">
-                                             </a>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="#" target="">
-                                                  <img src="img/photo-002.jpg" class="card-img">
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="#"target="_blank">
-                                                  <img src="img/photo-003.JPG" class="card-img">
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="#"target="_blank">
-                                                  <img src="img/photo-004.JPG" class="card-img">
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="#"target="_blank">
-                                                  <img src="img/photo-005.JPG" class="card-img">
-                                             </a>
-                                        </div>
-                                        <div class="col-md-4">
-                                             <a class="card mb-4 shadow-sm" href="#"target="_blank">
-                                                  <img src="img/photo-006.jpg" class="card-img">
-                                             </a>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="album pb-5">
-                              <div class="container">
-                                   <div class="subheading mb-3 border-bottom"><i class="fa fa-share-alt">&nbsp;</i>SOCIAL MEDIA</div>
-                                   <div class="card-columns">
-                                        <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/dinamo/" target="_blank">
-                                             <img src="img/37326226_1692178530894684_8460069624375934976_o.jpg" class="card-img">
+                    </div>
+                    <div class="album pb-5">
+                         <div class="container">
+                              <div class="subheading mb-3 border-bottom"><i class="fa fa-play">&nbsp;</i>Vídeos</div>
+                                   <div id="carouselExampleCaptions" class="carousel slide w-100 d-block" data-ride="carousel">
+                                        <ol class="carousel-indicators" id="carousel-indicators"></ol>
+                                        <div id="carousel-inner" class="carousel-inner"></div>
+                                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                             <span class="sr-only">Previous</span>
                                         </a>
-                                        <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/dinamo/" target="_blank">
-                                             <img src="img/37580887_1696864690426068_1239661474410921984_o.jpg" class="card-img">
-                                        </a>
-                                        <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/dinamo/" target="_blank">
-                                             <img src="img/41134548_1773221306123739_3494141601091944448_o.jpg" class="card-img">
-                                        </a>
-                                        <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/dinamo/" target="_blank">
-                                             <img src="img/43255833_1810653995713803_7029260432888037376_o.jpg" class="card-img">
-                                        </a>
-                                        <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/dinamo/" target="_blank">
-                                             <img src="img/46753128_1878527845593084_5312571698418024448_o.jpg" class="card-img">
-                                        </a>
-                                        <a class="card mb-4 shadow-sm" href="https://wagner-sousa.github.io/dinamo/" target="_blank">
-                                             <img src="img/46795161_1882384001874135_4239151322655358976_o.jpg" class="card-img">
+                                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                             <span class="sr-only">Next</span>
                                         </a>
                                    </div>
-                              </div>
-                         </div>
-                         <div class="album pb-5">
-                              <div class="container">
-                                   <div class="subheading mb-3 border-bottom"><i class="fa fa-play">&nbsp;</i>Vídeos</div>
-                                   <div class="card-columns">
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/2066682140294429/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/1238532052926003/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/1240718366040705/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/1300118436767364/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/2174399359448156/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/1439801012799105/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/1559700600809145/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/1559716647474207/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/1523039137808625/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/226762711514641/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/2275075302717265/" data-show-text="false">
-                                        </div>
-                                        <div class="fb-video card mb-4 shadow-sm" data-href="https://www.facebook.com/imaculada.conceicaopavuna/videos/1559614184151120/" data-show-text="false">
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-
-                    </div>
-
-               </section>
-
-               <hr class="m-0">
-
-               <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-                    <div class="w-100">
-                         <h2 class="mb-5"><i class="fa fa-graduation-cap">&nbsp;&nbsp;</i>Formação</h2>
-
-                         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                              <div class="resume-content">
-                                   <h3 class="mb-0">Análise e Desenvolvimento de Sistemas</h3>
-                                   <div class="subheading mb-3">Uniasselvi - Centro Universitário Leonardo da Vinci </div>
-                                   <p>2° Semestre</p>
-                              </div>
-                              <div class="resume-date text-md-right">
-                                   <span class="text-secondary">Em andamento</span>
-                              </div>
-                         </div>
-                         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                              <div class="resume-content">
-                                   <h3 class="mb-0">Técnico em Manutenção e Suporte em Informática</h3>
-                                   <div class="subheading mb-3">CEPEP - Centro de Estudo e Pesquisa em Eletrônica Proffisional &amp; Informática</div>
-                                   <p>1600 H</p>
-                              </div>
-                              <div class="resume-date text-md-right">
-                                   <span class="text-secondary">Julho 2014 - Fevereiro 2016</span>
-                              </div>
-                         </div>
-                         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                              <div class="resume-content">
-                                   <h3 class="mb-0">Aprendizagem em Serviços Administrativos</h3>
-                                   <div class="subheading mb-3">SENAC - Serviço Nacional de Aprendizagem Comercial</div>
-                                   <p>1280 H</p>
-                              </div>
-                              <div class="resume-date text-md-right">
-                                   <span class="text-secondary">Março 2013 - Junho 2014</span>
-                              </div>
                          </div>
                     </div>
-               </section>
 
-               <hr class="m-0">
+               </div>
 
-               <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-                    <div class="w-100">
-                         <h2 class="mb-5"><i class="fa fa-certificate">&nbsp;&nbsp;</i>Habilidades</h2>
+          </section>
 
-                         <div class="subheading mb-3">WEB</div>
-                         <div class="notice notice-success">
-                              <strong class="lead">FRONT-END</strong>&nbsp;&nbsp;&nbsp;
-                              <span class="badge badge-pill badge-success">HTML</span>
-                              <span class="badge badge-pill badge-success">CSS</span>
-                              <span class="badge badge-pill badge-success">JAVASCRIPT</span>
-                              <span class="badge badge-pill badge-success">JQUERY</span>
-                              <span class="badge badge-pill badge-success">BOOTSTRAP</span>
-                              <span class="badge badge-pill badge-success">SASS</span>
+          <hr class="m-0">
+
+          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+               <div class="w-100">
+                    <h2 class="mb-5"><i class="fa fa-graduation-cap">&nbsp;&nbsp;</i>Formação</h2>
+
+                    <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+                         <div class="resume-content">
+                              <h3 class="mb-0">Análise e Desenvolvimento de Sistemas</h3>
+                              <div class="subheading mb-3">Uniasselvi - Centro Universitário Leonardo da Vinci </div>
+                              <p>2° Semestre</p>
                          </div>
-                         <div class="notice notice-success">
-                              <strong class="lead">CMS</strong>&nbsp;&nbsp;&nbsp;
-                              <span class="badge badge-pill badge-success">WORDPRESS</span>
-                              <span class="badge badge-pill badge-success">CODEIGNITER</span>
-                              <span class="badge badge-pill badge-success">BLUDIT</span>
-                         </div>
-                         <hr/>
-                         <div class="subheading mb-3">Linguagens de Programação e Ferramentas</div>
-                         <div class="notice notice-danger">
-                              <strong class="lead">LINGUAGENS</strong>&nbsp;&nbsp;&nbsp;
-                              <span class="badge badge-pill badge-danger">PHP</span>
-                              <span class="badge badge-pill badge-danger">C#</span>
-                              <span class="badge badge-pill badge-danger">JAVA</span>
-                              <span class="badge badge-pill badge-danger">DELPHI</span>
-                              <span class="badge badge-pill badge-danger">PHP</span>
-                         </div> 
-                         <div class="notice notice-info">
-                              <strong class="lead">DATABASE</strong>&nbsp;&nbsp;&nbsp;
-                              <span class="badge badge-pill badge-info">MYSQL</span>
-                              <span class="badge badge-pill badge-info">SQLSERVER</span>
-                         </div>                        
-                         <div class="notice">
-                              <strong class="lead">OUTROS</strong>&nbsp;&nbsp;&nbsp;
-                              <span class="badge badge-pill badge-secondary">LINUX</span>
-                              <span class="badge badge-pill badge-secondary">MÍDIAS SOCIAIS</span>
-                              <span class="badge badge-pill badge-secondary">MICROSOFT OFFICE (AVANÇADO)</span>
-                              <span class="badge badge-pill badge-secondary">PHOTOSHOP</span>
-                              <span class="badge badge-pill badge-secondary">LIGHTROOM</span>
-                              <span class="badge badge-pill badge-secondary">FOTOGRAFIA</span>
-                              <span class="badge badge-pill badge-secondary">WINDOWS SERVER</span>
+                         <div class="resume-date text-md-right">
+                              <span class="text-secondary">Em andamento</span>
                          </div>
                     </div>
-               </section>
-
-               <hr class="m-0">
-
-               <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-                    <div class="w-100">
-                         <h2 class="mb-5"><i class="fa fa-comment">&nbsp;&nbsp;</i>Contato</h2>
-                         <form action="https://formspree.io/wagner.fernandes.sousa@outlook.com" method="POST" class="col-md-5 needs-validation" novalidate>
-
-                              <input name="name" type="text" placeholder="Nome" class="form-control mb-2 rounded-0" required>
-                              <input name="phone" type="tel" placeholder="Telefone" class="form-control mb-2 rounded-0" required>
-                              <input name="email" type="email" placeholder="Email" class="form-control mb-2 rounded-0" required>
-                              <textarea name="message" placeholder="Mensagem" class="form-control mb-2 rounded-0" required></textarea>
-                              <button type="submit" class="btn btn-secondary rounded-0">Enviar</button>
-                         </form>
-                         <script>
-                              // Example starter JavaScript for disabling form submissions if there are invalid fields
-                              (function() {
-                                   'use strict';
-                                   window.addEventListener('load', function() {
-                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                        var forms = document.getElementsByClassName('needs-validation');
-                                        // Loop over them and prevent submission
-                                        var validation = Array.prototype.filter.call(forms, function(form) {
-                                             form.addEventListener('submit', function(event) {
-                                                  if (form.checkValidity() === false) {
-                                                       event.preventDefault();
-                                                       event.stopPropagation();
-                                                  }
-                                                  form.classList.add('was-validated');
-                                             }, false);
-                                        });
-                                   }, false);
-                              })();
-                         </script>
+                    <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+                         <div class="resume-content">
+                              <h3 class="mb-0">Técnico em Manutenção e Suporte em Informática</h3>
+                              <div class="subheading mb-3">CEPEP - Centro de Estudo e Pesquisa em Eletrônica
+                                   Proffisional &amp; Informática</div>
+                              <p>1600 H</p>
+                         </div>
+                         <div class="resume-date text-md-right">
+                              <span class="text-secondary">Julho 2014 - Fevereiro 2016</span>
+                         </div>
                     </div>
-               </section>
-
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="maps" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-               <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                         <div class="modal-body">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                   <span aria-hidden="true">&times;</span>
-                              </button>
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5227583300207!2d-49.096757484956306!3d-26.855127583152413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df1e470b368cbf%3A0x37ed8e3f6a52d9b5!2sRua+dos+Cris%C3%A2ntemos%2C+37+-+Itoupavazinha%2C+Blumenau+-+SC%2C+89066-326!5e0!3m2!1spt-BR!2sbr!4v1563536718951!5m2!1spt-BR!2sbr" class="w-100" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+                         <div class="resume-content">
+                              <h3 class="mb-0">Aprendizagem em Serviços Administrativos</h3>
+                              <div class="subheading mb-3">SENAC - Serviço Nacional de Aprendizagem Comercial</div>
+                              <p>1280 H</p>
+                         </div>
+                         <div class="resume-date text-md-right">
+                              <span class="text-secondary">Março 2013 - Junho 2014</span>
                          </div>
                     </div>
                </div>
+          </section>
+
+          <hr class="m-0">
+
+          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+               <div class="w-100">
+                    <h2 class="mb-5"><i class="fa fa-certificate">&nbsp;&nbsp;</i>Conhecimentos</h2>
+                    <div id="card-skills">
+                    </div>
+               </div>
+          </section>
+
+          <hr class="m-0">
+
+          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+               <div class="w-100">
+                    <h2 class="mb-5"><i class="fa fa-comments">&nbsp;&nbsp;</i>Contato</h2>
+                    <form action="https://formspree.io/moqdovnp" method="POST"
+                         class="col-md-5 needs-validation" novalidate>
+
+                         <input name="name" type="text" placeholder="Nome" class="form-control mb-2 rounded-0" required>
+                         <input name="phone" type="tel" placeholder="Telefone" class="form-control mb-2 rounded-0"
+                              required>
+                         <input name="email" type="email" placeholder="Email" class="form-control mb-2 rounded-0"
+                              required>
+                         <textarea name="message" placeholder="Mensagem" rows="5" class="form-control mb-2 rounded-0"
+                              required></textarea>
+                         <button type="submit" class="btn btn-dark float-right rounded-0">Enviar</button>
+                    </form>
+                    <script>
+                         // Example starter JavaScript for disabling form submissions if there are invalid fields
+                         (function () {
+                              'use strict';
+                              window.addEventListener('load', function () {
+                                   // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                   var forms = document.getElementsByClassName('needs-validation');
+                                   // Loop over them and prevent submission
+                                   var validation = Array.prototype.filter.call(forms, function (form) {
+                                        form.addEventListener('submit', function (event) {
+                                             if (form.checkValidity() === false) {
+                                                  event.preventDefault();
+                                                  event.stopPropagation();
+                                             }
+                                             form.classList.add('was-validated');
+                                        }, false);
+                                   });
+                              }, false);
+                         })();
+                    </script>
+               </div>
+          </section>
+
+     </div>
+
+     <!-- Modal -->
+     <div id="modal-video" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                    <div class="modal-body">
+                    </div>
+               </div>
           </div>
+     </div>
 
-          <!-- Bootstrap core JavaScript -->
-          <script src="vendor/jquery/jquery.min.js"></script>
-          <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-          <script>
-               $(function () {
-                    $('[data-toggle="tooltip"]').tooltip()
+     <!-- Bootstrap core JavaScript -->
+     <script src="vendor/jquery/jquery.min.js"></script>
+     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+     <script>
+          var label_web = {
+               android: {
+                              icon: 'android',
+                              title: 'apk',
+                              color: 'success',
+                         },
+               framework: {
+                              icon: 'th-large',
+                              title: 'framework',
+                              color: 'danger',
+                         },
+               evaluation: {
+                              icon: 'graduation-cap',
+                              title: 'avaliação',
+                              color: 'info',
+                         },
+               refresh: {
+                              icon: 'refresh',
+                              title: 'update',
+                              color: 'warning',
+                         },
+          };
+          var web = [
+               {
+                    title: 'Projeto Chiara Luce',
+                    link: 'https://wagner-sousa.github.io/site-chiara-luce/',
+                    img: '001',
+                    label: [],
+               },
+               {
+                    title: 'Hash Game',
+                    link: 'https://wagner-sousa.github.io/appHashGame/',
+                    img: '002',
+                    label: [
+                         label_web.android,
+                    ],
+               },
+               {
+                    title: 'Tree Framework',
+                    link: 'https://wagner-sousa.github.io/tree-framework/',
+                    img: '003',
+                    label: [
+                         label_web.framework,
+                    ],
+               },
+               {
+                    title: 'Local Server Folder',
+                    link: 'https://github.com/wagner-sousa/local-server-folder',
+                    img: '004',
+                    label: [
+                         label_web.framework,
+                    ]
+               },
+               {
+                    title: 'JF Administradora',
+                    link: 'https://wagner-sousa.github.io/JFADMIN/',
+                    img: '005',
+                    label: [],
+               },
+               {
+                    title: 'Stark RH',
+                    link: 'https://wagner-sousa.github.io/StarkRH',
+                    img: '006',
+                    label: [],
+               },
+               {
+                    title: 'Blog',
+                    link: 'https://wagner-sousa.github.io/ProjectBlog',
+                    img: '007',
+                    label: [
+                         label_web.evaluation,
+                    ],
+               },
+               {
+                    title: 'Projeto Glass',
+                    link: 'https://wagner-sousa.github.io/projeto-glass/',
+                    img: '008',
+                    label: [
+                         label_web.evaluation,
+                    ],
+               },
+               {
+                    title: 'Dinamo',
+                    link: 'https://wagner-sousa.github.io/dinamo/',
+                    img: '009',
+                    label: [
+                         label_web.evaluation,
+                         label_web.refresh,
+                    ],
+               },
+               {
+                    title: 'Infor.me',
+                    link: 'https://wagner-sousa.github.io/foca/',
+                    img: '010',
+                    label: [],
+               },
+               {
+                    title: 'Hako Sushi',
+                    link: 'https://wagner-sousa.github.io/hako/',
+                    img: '011',
+                    label: [],
+               },
+               {
+                    title: 'Sushi Garden',
+                    link: 'https://wagner-sousa.github.io/sushi-garden/',
+                    img: '012',
+                    label: [],
+               },
+          ];
+          var social = [
+               {
+                    link: 'https://www.linkedin.com/in/wagner-sousa-developer/',
+                    icon:'linkedin',
+                    title:'Linkedin-in'
+               },
+               {
+                    link: 'https://github.com/wagner-sousa',
+                    icon:'github',
+                    title:'GitHub'
+               },
+               {
+                    link: 'https://gitlab.com/wagner.sousa',
+                    icon:'gitlab',
+                    title:'GitLab'
+               },
+               {
+                    link: 'https://www.facebook.com/wagner.sousa.developer',
+                    icon:'facebook-f',
+                    title:'Facebook'
+               },
+               {
+                    link: 'doc.pdf',
+                    icon:'file-text-o',
+                    title:'Curriculum'
+               },
+               {
+                    link: 'http://api.whatsapp.com/send?1=pt_BR&phone=5585991013648',
+                    icon:'whatsapp',
+                    title:'Whatsapp'
+               },
+          ];
+          var video = [
+               {
+                    id: '2066682140294429',
+                    poster: '001',
+                    height: 470,
+
+               },
+               {
+                    id: '1238532052926003',
+                    poster: '002',
+               },
+               {
+                    id: '1240718366040705',
+                    poster: '003',
+               },
+               {
+                    id: '1300118436767364',
+                    poster: '004',
+               },
+               {
+                    id: '2174399359448156',
+                    poster: '005',
+                    height: 470,
+               },
+               {
+                    id: '1439801012799105',
+                    poster: '006',
+               },
+               {
+                    id: '1523039137808625',
+                    poster: '007',
+                    height: 470,
+               },
+               {
+                    id: '226762711514641',
+                    poster: '008',
+               },
+               {
+                    id: '2275075302717265',
+                    poster: '009',
+               },
+               {
+                    id: '2794075720615299',
+                    poster: '010',
+                    height: 470,
+               },
+               {
+                    id: '591977854914592',
+                    poster: '011',
+                    height: 470,
+               },
+               {
+                    id: '1024907904542773',
+                    poster: '012',
+               },
+          ];
+          var skills = [
+               {
+                    name: 'web',
+                    color: 'info',
+                    label: [
+                         'bootstrap',
+                         'sass',
+                         'wordpress',
+                         'codeigniter',
+                         'bludit',
+                         'laravel',
+                         'vue',
+                    ],
+               },
+               {
+                    name: 'linguagens',
+                    color: 'danger',
+                    label: [
+                         'php',
+                         'c#',
+                    ],
+               },
+               {
+                    name: 'database',
+                    color: 'success',
+                    label: [
+                         'mysql',
+                         'sql server',
+                    ],
+               },
+               {
+                    name: 'outros',
+                    color: 'secondary',
+                    label: [
+                         'linux',
+                         'fotografia',
+                         'photoshop',
+                    ],
+               },
+          ];
+
+
+          $(function () {
+               makeListSocialIcons();
+               makePortifolioWeb();
+               makePortifolioPhoto();
+               makePortifolioMedia();
+               makeCarrousel();
+               makeListCardSkills();
+               $('[data-toggle="tooltip"]').tooltip();
+               $(".item-video").click(function(){
+                    var frame = loadVideoModal($(this).attr('id'), $(this).data('height'));
+                    $("#modal-video > .modal-dialog > .modal-content > .modal-body").html(frame);
+               });
+               $('#modal-video').on('hidden.bs.modal', function (e) {
+                    $("#modal-video > .modal-dialog > .modal-content > .modal-body").html('');
                })
-          </script>
-          <!-- Plugin JavaScript -->
-          <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+          });
 
-          <!-- Custom scripts for this template -->
-          <script src="js/resume.min.js"></script>
+          function makeLabelItemPortifolio(label) {
+               return "<small class='card-text badge badge-pill badge-" + label.color + " small lead'>" +
+                    "<i class='fa fa-" + label.icon + "'></i> " + label.title +
+                    "</small>";
+          }
 
-     </body>
+          function makeItemPortifolio(item) {
+               var label = '';
+               if (item.label.length > 0) {
+                    for (let index = 0; index < item.label.length; index++) {
+                         label += makeLabelItemPortifolio(item.label[index]);
+                    }
+               }
+
+               return "<div class='col-md-3'>" +
+                    "<a class='card mb-4 shadow-sm' href='" + item.link + "' target='_blank'>" +
+                    "<img src='img/web/" + item.img + ".png' class='card-img'>" +
+                    "<div class='card-img-overlay'>" +
+                    "<h5 class='card-title text-white'>" + item.title + "</h5>" + label +
+                    "</div>" +
+                    "</a>" +
+                    "</div>";
+          }
+
+          function makeGallery(photo, paste) {
+               return "<div class='card rounded-0'>" +
+                    "<ul class='list-group list-group-flush'>" +
+                    "<a href='img/" + paste + "/00" + photo + ".jpg' class='lightbox m-0 p-0 list-group-item list-group-item-action d-flex w-100 justify-content-between'>" +
+                    "<img class='card-img rounded-0' src='img/" + paste + "/00" + photo + ".jpg'>" +
+                    "</a>" +
+                    "</ul>" +
+                    "</div>";
+          }
+
+          function socialIcon(item) {
+               return    "<a href='" + item.link + "' class='mx-1 mb-3 col-md-auto rounded-pill bg-dark'" +
+                              "data-toggle='tooltip' title='" + item.title + "'>" +
+                                   "<i class='fa fa-" + item.icon + "'></i><span class='d-none'> | " + item.title + "</span>" +
+                         "</a>";
+          }
+
+          function loadVideoModal(id, height) {
+               return "<iframe src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fchartersforchange%2Fvideos%2F" + id +  "%2F&show_text=0&width=560&mute=1'" +
+                         "width='100%' height='" + height + "' style='border:none;overflow:hidden' scrolling='no' frameborder='0' allowTransparency='true' allowFullScreen='true'></iframe>";
+          }
+
+          function makeItemCarrousel(video) {
+               height = video.height ? video.height : 260;
+               return    "<div class='carousel-item'>" +
+                              "<img src='img/poster/" + video.poster + ".png' class='mx-auto d-block item-video' id='" + video.id + "' data-height='" + height + "' data-toggle='modal' data-target='#modal-video'>" +
+                         "</div>";
+          }
+
+          function makeLabelSkill(color, text) {
+               return "<span class='text-uppercase badge badge-pill badge-" + color + "'>" + text + "</span>";
+          }
+
+          function makeCardSkills(card) {
+               var labels = '';
+               for (let index = 0; index < card.label.length; index++) {
+                    labels += makeLabelSkill(card.color, card.label[index]) + "&nbsp;";
+               }
+
+               return    "<div class='notice notice-" + card.color + "'>" +
+                              "<strong class='lead text-uppercase'>" + card.name + "</strong>&nbsp;&nbsp;&nbsp;" +
+                              labels +
+                         "</div>";
+          }
+
+          /////////////////////////////////////////////////////////////////////
+
+          function makePortifolioWeb() {
+               var items = '';
+               for (let index = 0; index < web.length; index++) {
+                    items += makeItemPortifolio(web[index]);
+               }
+               $('#portifolio-web').html(items);
+          }
+
+          function makePortifolioPhoto() {
+               var items = '';
+               for (let index = 0; index < 17; index++) {
+                    items += makeGallery((index + 1), 'photo');
+               }
+               $('#portifolio-photo').html(items);
+               baguetteBox.run('.portifolio-photo');
+          }
+
+          function makePortifolioMedia() {
+               var items = '';
+               for (let index = 0; index < 23; index++) {
+                    items += makeGallery((index + 1), 'media');
+               }
+               $('#portifolio-media').html(items);
+               baguetteBox.run('.portifolio-media');
+          }
+
+          function makeListSocialIcons() {
+               var list = '';
+               for (let index = 0; index < social.length; index++) {
+                    list += socialIcon(social[index]);
+               }
+               $('#social-icons').html(list);
+          }
+
+          function makeCarrousel() {
+               var indicators = '';
+               var items = '';
+               for (let index = 0; index < video.length; index++) {
+                    indicators += "<li data-target='#carouselExampleCaptions' data-slide-to='" + index + "' class='active'></li>";
+                    items += makeItemCarrousel(video[index]);
+               }
+               $('#carousel-indicators').html(indicators);
+               $('#carousel-inner').html(items);
+               $('#carousel-indicators li:first, #carousel-inner div:first').addClass('active');
+          }
+
+          function makeListCardSkills() {
+               var cards = '';
+               for (let index = 0; index < skills.length; index++) {
+                    cards += makeCardSkills(skills[index]);
+               }
+
+               $('#card-skills').html(cards);
+          }
+
+     </script>
+     <!-- Plugin JavaScript -->
+     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+     <!-- Custom scripts for this template -->
+     <script src="js/resume.min.js"></script>
+
+</body>
 
 </html>
