@@ -67,6 +67,10 @@
                                    class="fa fa-certificate">&nbsp;&nbsp;</i>Conhecimentos</a>
                     </li>
                     <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#podcasts"><i
+                              class="fa fa-podcast">&nbsp;&nbsp;</i>Podcast's</a>
+                    </li>
+                    <li class="nav-item">
                          <a class="nav-link js-scroll-trigger" href="#interests"><i
                                    class="fa fa-comments">&nbsp;&nbsp;</i>Contato</a>
                     </li>
@@ -207,45 +211,55 @@
 
           <hr class="m-0">
 
-          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="podcasts">
                <div class="w-100">
-                    <h2 class="mb-5"><i class="fa fa-comments">&nbsp;&nbsp;</i>Contato</h2>
-                    <form action="https://formspree.io/moqdovnp" method="POST"
-                         class="col-md-5 needs-validation" novalidate>
-
-                         <input name="name" type="text" placeholder="Nome" class="form-control mb-2 rounded-0" required>
-                         <input name="phone" type="tel" placeholder="Telefone" class="form-control mb-2 rounded-0"
-                              required>
-                         <input name="email" type="email" placeholder="Email" class="form-control mb-2 rounded-0"
-                              required>
-                         <textarea name="message" placeholder="Mensagem" rows="5" class="form-control mb-2 rounded-0"
-                              required></textarea>
-                         <button type="submit" class="btn btn-dark float-right rounded-0">Enviar</button>
-                    </form>
-                    <script>
-                         // Example starter JavaScript for disabling form submissions if there are invalid fields
-                         (function () {
-                              'use strict';
-                              window.addEventListener('load', function () {
-                                   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                   var forms = document.getElementsByClassName('needs-validation');
-                                   // Loop over them and prevent submission
-                                   var validation = Array.prototype.filter.call(forms, function (form) {
-                                        form.addEventListener('submit', function (event) {
-                                             if (form.checkValidity() === false) {
-                                                  event.preventDefault();
-                                                  event.stopPropagation();
-                                             }
-                                             form.classList.add('was-validated');
-                                        }, false);
-                                   });
-                              }, false);
-                         })();
-                    </script>
+                    <h2 class="mb-5"><i class="fa fa-podcast">&nbsp;&nbsp;</i>Podcast's</h2>
+                    <div id="podcast-list"></div>
                </div>
           </section>
 
      </div>
+     <hr class="m-0">
+
+     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+          <div class="w-100">
+               <h2 class="mb-5"><i class="fa fa-comments">&nbsp;&nbsp;</i>Contato</h2>
+               <form action="https://formspree.io/moqdovnp" method="POST"
+                    class="col-md-5 needs-validation" novalidate>
+
+                    <input name="name" type="text" placeholder="Nome" class="form-control mb-2 rounded-0" required>
+                    <input name="phone" type="tel" placeholder="Telefone" class="form-control mb-2 rounded-0"
+                         required>
+                    <input name="email" type="email" placeholder="Email" class="form-control mb-2 rounded-0"
+                         required>
+                    <textarea name="message" placeholder="Mensagem" rows="5" class="form-control mb-2 rounded-0"
+                         required></textarea>
+                    <button type="submit" class="btn btn-dark float-right rounded-0">Enviar</button>
+               </form>
+               <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function () {
+                         'use strict';
+                         window.addEventListener('load', function () {
+                              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                              var forms = document.getElementsByClassName('needs-validation');
+                              // Loop over them and prevent submission
+                              var validation = Array.prototype.filter.call(forms, function (form) {
+                                   form.addEventListener('submit', function (event) {
+                                        if (form.checkValidity() === false) {
+                                             event.preventDefault();
+                                             event.stopPropagation();
+                                        }
+                                        form.classList.add('was-validated');
+                                   }, false);
+                              });
+                         }, false);
+                    })();
+               </script>
+          </div>
+     </section>
+
+</div>
 
      <!-- Modal -->
      <div id="modal-video" class="modal fade" role="dialog">
@@ -404,6 +418,34 @@
                     title:'Whatsapp'
                },
           ];
+          var podcast = [
+               {
+                    name: "stream-cast",
+                    info: "Um pouco de tudo sobre tudo.<br>Sempre trazendo informações, análises e recomendações de livros, quadrinhos, filmes, séries e quem sabe até animes.",
+                    rss: [
+                         {
+                              link: 'https://anchor.fm/s/144b4c18/podcast/rss',
+                              icon:'rss',
+                              title:'Assine o Feed'
+                         },
+                         {
+                              link: 'https://open.spotify.com/show/6rdiR8GX9Toe0vkUMprQ1A',
+                              icon:'spotify',
+                              title:'Ouça no Spotify'
+                         },
+                         {
+                              link: 'https://podcasts.apple.com/us/podcast/stream-cast/id1499029554?uo=4',
+                              icon:'podcast',
+                              title:'Assine no iTunes'
+                         },
+                         {
+                              link: 'https://www.google.com/podcasts?feed=aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvMzQ4NzI4MC9lcGlzb2Rlcy9mZWVk',
+                              icon:'google',
+                              title:'Assine no Google Podcasts'
+                         },
+                    ],
+               }
+          ];
           var video = [
                {
                     id: '2066682140294429',
@@ -509,6 +551,7 @@
                makePortifolioMedia();
                makeCarrousel();
                makeListCardSkills();
+               makeListPodcastIcons();
                $('[data-toggle="tooltip"]').tooltip();
                $(".item-video").click(function(){
                     var frame = loadVideoModal($(this).attr('id'), $(this).data('height'));
@@ -553,10 +596,10 @@
                     "</div>";
           }
 
-          function socialIcon(item) {
-               return    "<a href='" + item.link + "' class='mx-1 mb-3 col-md-auto rounded-pill bg-dark'" +
+          function socialIcon(item, css = '') {
+               return    "<a href='" + item.link + "' class='mx-1 mb-3 col-md-auto rounded-pill bg-dark text-white " + css + "'" +
                               "data-toggle='tooltip' title='" + item.title + "'>" +
-                                   "<i class='fa fa-" + item.icon + "'></i><span class='d-none'> | " + item.title + "</span>" +
+                                   "<i class='fa fa-" + item.icon + " text-white'></i><span class='d-none text-white'> | " + item.title + "</span>" +
                          "</a>";
           }
 
@@ -641,6 +684,31 @@
                }
 
                $('#card-skills').html(cards);
+          }
+
+          function makePodcastList(podcast){
+               var links = '';
+               for (let index = 0; index < podcast.rss.length; index++) {
+                    links += socialIcon(podcast.rss[index], "mt-2 py-2");
+               }
+               return "<div class='card row rounded-0'>" +
+                         "<div class='card-body row'>" +
+                              "<div class='col-12 col-md-2'><img src='img/" + podcast.name + ".jpg' width='100%'></div>" +
+                                   "<div class='col-12 col-md-10'>" +
+                                        "<h4 class='mb-1 text-uppercase'>" + podcast.name + "</h4>" + 
+                                        podcast.info + "<br>" +
+                                        "<div class='mt-2'>" + links + "</div>" +
+                                   "</div>" +
+                              "</div>" +
+                         "</div>";
+          }
+
+          function makeListPodcastIcons() {
+               var list = '';
+               for (let index = 0; index < podcast.length; index++) {
+                    list += makePodcastList(podcast[index]);
+               }
+               $('#podcast-list').html(list);
           }
 
      </script>
