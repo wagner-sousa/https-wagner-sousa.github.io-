@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "wagner-sousa.github.io"
+      url: "https://wagner-sousa.github.io/"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
