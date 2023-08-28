@@ -5,7 +5,7 @@ VOLUME /usr/src/app
 
 COPY . .
 
-RUN npm install -g bower
+#RUN npm install -g bower
 #RUN bower install --allow-root
 
 RUN npm install -g http-server

@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js && sass scss/main.scss css/output.css"
+    "build": "webpack --config webpack.config.js && sass scss/_mixins.scss css/app.css"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "dependencies": {
     "bootstrap": "^5.3.1",
     "font-awesome": "^4.7.0",
+    "gulp": "^4.0.2",
     "jquery": "^3.7.1",
     "jquery-easing": "^0.0.1"
   },
