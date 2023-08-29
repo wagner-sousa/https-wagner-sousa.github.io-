@@ -68,7 +68,7 @@ jobs:
           - name: Download Assets
             uses: actions/download-artifact@v3
             with:
-              name: my-artifact
+              name: assets
           - name: Deploy to GitHub Pages
             id: deployment
             uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
