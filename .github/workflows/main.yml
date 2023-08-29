@@ -41,6 +41,7 @@ jobs:
     - run: npm run build --if-present 
   # Single deploy job since we're just deploying
   deploy:
+    needs: build
     environment:
       name: github-pages
       url: "https://wagner-sousa.github.io/"
