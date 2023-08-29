@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js && sass scss/_mixins.scss public/app.css"
+    "build": "webpack --config webpack.config.js && sass scss/_mixins.scss public/assets/app.css"
   },
   "repository": {
     "type": "git",

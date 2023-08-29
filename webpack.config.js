@@ -4,6 +4,6 @@ module.exports = {
   entry: './js/_mixins.js', // Arquivo de entrada principal
   output: {
     filename: 'app.js', // Nome do arquivo de saída
-    path: path.resolve(__dirname, 'public'), // Diretório de saída
+    path: path.resolve(__dirname, 'public/assets'), // Diretório de saída
   },
 };

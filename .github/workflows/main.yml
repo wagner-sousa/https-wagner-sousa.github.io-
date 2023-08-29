@@ -45,7 +45,7 @@ jobs:
           uses: actions/upload-artifact@v3
           with:
             name: assets
-            path: public/
+            path: assets/
     
       # Deploy job
       deploy:
