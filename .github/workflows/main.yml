@@ -24,21 +24,20 @@ jobs:
       # Build job
       build:
         runs-on: ubuntu-latest
-        strategy:
-          matrix:
-            node-version: [18.x]
-            # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         steps:
         - uses: actions/checkout@v3
-        - name: Use Node.js ${{ matrix.node-version }}
+        - name: Use Node.js
           uses: actions/setup-node@v3
           with:
-            node-version: ${{ matrix.node-version }}
+            node-version: 18
             cache: 'npm'
-        - run: npm install
-        - run: npm install sass
-        - run: npm ci
-        - run: npm run build 
+        - name: Install dependencies
+          run: |
+            npm install
+            npm install sass
+            npm ci
+        - name: Build
+          run: npm run build 
     
       # Deploy job
       deploy:
