@@ -21,41 +21,43 @@ concurrency:
 
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm install
-    - run: npm install sass
-    - run: npm ci
-    - run: npm run build 
-  # Single deploy job since we're just deploying
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: "https://wagner-sousa.github.io/"
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+      # Build job
+      build:
+        runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            node-version: [18.x]
+            # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        steps:
+        - uses: actions/checkout@v3
+        - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+            cache: 'npm'
+        - run: npm install
+        - run: npm install sass
+        - run: npm ci
+        - run: npm run build 
+    
+      # Deploy job
+      deploy:
+        # Add a dependency to the build job
+        needs: build
+    
+        # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+        permissions:
+          pages: write      # to deploy to Pages
+          id-token: write   # to verify the deployment originates from an appropriate source
+    
+        # Deploy to the github-pages environment
+        environment:
+          name: github-pages
+          url: "https://wagner-sousa.github.io/"
+    
+        # Specify runner + deployment step
+        runs-on: ubuntu-latest
+        steps:
+          - name: Deploy to GitHub Pages
+            id: deployment
+            uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
