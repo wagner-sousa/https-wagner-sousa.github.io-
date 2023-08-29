@@ -1,7 +1,7 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: GitHubPages Deploy
+name: GitHubPages
 
 on:
   push:
@@ -21,54 +21,22 @@ concurrency:
 
 
 jobs:
-      # Build job
-      build:
-        runs-on: self-hosted
-        steps:
-        - uses: actions/checkout@v3
-
-        - name: Use Node.js
-          uses: actions/setup-node@v3
-          with:
-            node-version: 18
-            cache: 'npm'
-        - name: Install dependencies
-          run: |
-            npm install
-            npm install sass
-            npm ci
-
-        - name: Build
-          run: npm run build
-
-        - name: Upload Assets
-          uses: actions/upload-artifact@v3
-          with:
-            name: assets
-            path: assets/
-    
-      # Deploy job
-      deploy:
-        # Add a dependency to the build job
-        needs: build
-    
-        # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-        permissions:
-          pages: write      # to deploy to Pages
-          id-token: write   # to verify the deployment originates from an appropriate source
-    
-        # Deploy to the github-pages environment
-        environment:
-          name: github-pages
-          url: "https://wagner-sousa.github.io/"
-    
-        # Specify runner + deployment step
-        runs-on: self-hosted
-        steps:
-          - name: Download Assets
-            uses: actions/download-artifact@v3
-            with:
-              name: assets
-          - name: Deploy to GitHub Pages
-            id: deployment
-            uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: "https://wagner-sousa.github.io/"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

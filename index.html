@@ -10,12 +10,16 @@
 
      <title>Portifólio &#8226; Wagner Sousa </title>
 
+     <!-- Bootstrap core CSS -->
+     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
      <!-- Custom fonts for this template -->
      <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-     <link href="public/assets/app.css" rel="stylesheet"/>
      
+     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
      <!-- Custom styles for this template -->
+     <link href="css/resume.min.css" rel="stylesheet">
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
      <style>
@@ -37,7 +41,7 @@
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
           <a class="navbar-brand js-scroll-trigger d-md-block" href="#page-top">
                <span class="d-none d-lg-table-row">
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="public/img/profile.jpg" alt="">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
                </span>
           </a>
           <div class="container-fluid">
@@ -74,7 +78,7 @@
           <section class="resume-section p-3 p-lg-5 d-flex align-items-center text-center" id="about">
                <div class="w-100">
                     <span class="d-md-none justify-content-center">
-                         <img class="img-fluid img-profile rounded-circle mx-auto mb-2 w-50" src="public/img/profile.jpg"alt="">
+                         <img class="img-fluid img-profile rounded-circle mx-auto mb-2 w-50" src="img/profile.jpg"alt="">
                          <h3 class="mb-0">Wagner Sousa</h4>
                          <div class="subheading">Desenvolvedor &#8226; Fotógrafo &#8226; Social Media</div>
                          <hr/>
@@ -250,7 +254,10 @@
           </div>
      </div>
 
-     <script src="public/assets/app.js"></script>
+     <!-- Bootstrap core JavaScript -->
+     <script src="vendor/jquery/dist/jquery.min.js"></script>
+     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
      <script>
           var label_web = {
                android: {
@@ -552,7 +559,7 @@
 
                return "<div class='col-md-3'>" +
                     "<a class='card mb-4 shadow-sm' href='" + item.link + "' target='_blank'>" +
-                    "<img src='public/img/web/" + item.img + ".png' class='card-img'>" +
+                    "<img src='img/web/" + item.img + ".png' class='card-img'>" +
                     "<div class='card-img-overlay'>" +
                     "<h5 class='card-title text-white'>" + item.title + "</h5>" + label +
                     "</div>" +
@@ -563,8 +570,8 @@
           function makeGallery(photo, paste) {
                return "<div class='card rounded-0'>" +
                     "<ul class='list-group list-group-flush'>" +
-                    "<a href='public/img/" + paste + "/00" + photo + ".jpg' class='lightbox m-0 p-0 list-group-item list-group-item-action d-flex w-100 justify-content-between'>" +
-                    "<img class='card-img rounded-0' src='public/img/" + paste + "/00" + photo + ".jpg'>" +
+                    "<a href='img/" + paste + "/00" + photo + ".jpg' class='lightbox m-0 p-0 list-group-item list-group-item-action d-flex w-100 justify-content-between'>" +
+                    "<img class='card-img rounded-0' src='img/" + paste + "/00" + photo + ".jpg'>" +
                     "</a>" +
                     "</ul>" +
                     "</div>";
@@ -585,7 +592,7 @@
           function makeItemCarrousel(video) {
                height = video.height ? video.height : 260;
                return    "<div class='carousel-item'>" +
-                              "<img src='public/img/poster/" + video.poster + ".png' class='mx-auto d-block item-video' id='" + video.id + "' data-height='" + height + "' data-toggle='modal' data-target='#modal-video'>" +
+                              "<img src='img/poster/" + video.poster + ".png' class='mx-auto d-block item-video' id='" + video.id + "' data-height='" + height + "' data-toggle='modal' data-target='#modal-video'>" +
                          "</div>";
           }
 
@@ -661,6 +668,12 @@
           }
 
      </script>
+     <!-- Plugin JavaScript -->
+     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+     <!-- Custom scripts for this template -->
+     <script src="js/resume.min.js"></script>
+
 </body>
 
 </html>
