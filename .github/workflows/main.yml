@@ -26,12 +26,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
       - run: npm ci
       - run: npm run build
+      
+      - name: Caching ./public path
+        uses: actions/cache/save@v3
+        id: cache-public
+        with:
+          path: ./public
+          key: ${{ runner.os }}-public
+
   # Single deploy job since we're just deploying
   deploy:
     needs: build
@@ -43,6 +47,12 @@ jobs:
       - uses: actions/setup-node@v3
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Get cache ./public path
+        id: cache-primes
+        uses: actions/cache@v3
+        with:
+          path: ./public
+          key: ${{ runner.os }}-public
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
