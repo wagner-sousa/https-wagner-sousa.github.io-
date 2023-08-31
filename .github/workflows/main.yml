@@ -34,7 +34,7 @@ jobs:
         id: cache-public
         with:
           path: ./public
-          key: ${{ runner.os }}-public
+          key: ${{ runner.temp }}--${{ github.run_id }}-public
 
   # Single deploy job since we're just deploying
   deploy:
@@ -50,9 +50,11 @@ jobs:
       - name: Get cache ./public path
         id: cache-public
         uses: actions/cache@v3
+        env:
+          SEGMENT_DOWNLOAD_TIMEOUT_MINS: 1
         with:
           path: ./public
-          key: ${{ runner.os }}-public
+          key: ${{ runner.temp }}--${{ github.run_id }}-public
 
       - name: Making Publish Path
         run: mv public/ _site/public/ && mv index.html _site/
