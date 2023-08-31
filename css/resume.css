@@ -200,3 +200,10 @@ section.resume-section .resume-item .resume-date {
 .notice-danger>strong {
     color: #d73814;
 }
+
+#carousel-inner .carousel-item > img {
+  height:500px;
+}
+.carousel {
+  height:500px;
+}

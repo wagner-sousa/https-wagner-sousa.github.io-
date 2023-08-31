@@ -19,10 +19,10 @@
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
+  
+  new bootstrap.ScrollSpy(document.body, {
     target: '#sideNav'
-  });
+  })
+  
 
 })(jQuery); // End of use strict

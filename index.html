@@ -8,29 +8,22 @@
      <meta name="description" content="">
      <meta name="author" content="">
 
+     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+     <meta http-equiv="Pragma" content="no-cache">
+     <meta http-equiv="Expires" content="0">
+
+
      <title>Portifólio &#8226; Wagner Sousa </title>
+     <link rel="icon" href="public/public/img/favicon.ico" type="image/x-icon">
 
      <!-- Bootstrap core CSS -->
-     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="public/css/app.css" rel="stylesheet">
 
      <!-- Custom fonts for this template -->
      <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-     
-     <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
-     <!-- Custom styles for this template -->
-     <link href="css/resume.min.css" rel="stylesheet">
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-     <style>
-          #carousel-inner .carousel-item > img {
-               height:500px;
-          }
-          .carousel {
-               height:500px;
-          }
-     </style>
-
 </head>
 
 <body id="page-top">
@@ -41,7 +34,7 @@
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
           <a class="navbar-brand js-scroll-trigger d-md-block" href="#page-top">
                <span class="d-none d-lg-table-row">
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="public/img/profile.jpg" alt="">
                </span>
           </a>
           <div class="container-fluid">
@@ -49,7 +42,7 @@
                
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler mb-2 rounded rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <i class="fa fa-code"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -75,18 +68,28 @@
         </nav>
      <div class="container-fluid p-0">
 
+          <section class="resume-section mt-5 d-md-none justify-content-center align-items-center text-center">
+               <img class="img-fluid img-profile rounded-circle mx-auto mb-2 w-50" src="public/img/profile.jpg"alt="">
+               <h3 class="mb-0">Wagner Sousa</h4>
+               <div class="subheading">Desenvolvedor &#8226; Fotógrafo &#8226; Social Media</div>
+               <hr class="pt-5"/>
+               <div class="social-icons row justify-content-center" id="social-icons"></div>
+               <div class="p-5 m-5"></div>
+               <hr/>
+          </section>
+
           <section class="resume-section p-3 p-lg-5 d-flex align-items-center text-center" id="about">
                <div class="w-100">
-                    <span class="d-md-none justify-content-center">
-                         <img class="img-fluid img-profile rounded-circle mx-auto mb-2 w-50" src="img/profile.jpg"alt="">
-                         <h3 class="mb-0">Wagner Sousa</h4>
-                         <div class="subheading">Desenvolvedor &#8226; Fotógrafo &#8226; Social Media</div>
-                         <hr/>
-                    </span>
                     <span class="d-none d-md-block">
                          <h1 class="mb-0">Wagner Sousa</h1>
                          <div class="subheading mb-5">Desenvolvedor &#8226; Fotógrafo &#8226; Social Media</div>
                     </span>
+                    <h2 class="mb-5 d-md-none">
+                         <div class="row">
+                              <div class="col-xs-12 col-md-1"><i class="fa fa-graduation-cap"></i></div>
+                              <div class="col">Sobre mim</div>
+                         </div>
+                    </h2>
                     <!--
                     <div class="subheading mb-3 text-decoration-none text-dark">
                          <i class="fa fa-mobile-phone">&nbsp;</i> (85) 99101.3648<br />
@@ -106,9 +109,8 @@
                     </p>
                     <p class="lead"></p>
 
-                    <div class="container">
-                         <div class="social-icons row justify-content-center" id="social-icons">
-                         </div>
+                    <div class="container d-none d-md-block">
+                         <div class="social-icons row justify-content-center" id="social-icons"></div>
                     </div>
                </div>
           </section>
@@ -118,7 +120,7 @@
           <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
                <div class="w-100">
                     <h2 class="mb-5">
-                         <div class="row">
+                         <div class="row text-center text-sm-start">
                               <div class="col-xs-12 col-md-1"><i class="fa fa-graduation-cap"></i></div>
                               <div class="col">Formação</div>
                          </div>
@@ -170,7 +172,7 @@
           <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
                <div class="w-100">
                     <h2 class="mb-5">
-                         <div class="row">
+                         <div class="row text-center text-sm-start">
                               <div class="col-xs-12 col-md-1"><i class="fa fa-puzzle-piece"></i></div>
                               <div class="col">Projetos</div>
                          </div>
@@ -238,8 +240,8 @@
                     </div>
 
                </div>
-
           </section>
+          <div class="d-block d-sm-none m-5 p-5"></div>
      </div>
      <hr class="m-0">
 
@@ -255,8 +257,7 @@
      </div>
 
      <!-- Bootstrap core JavaScript -->
-     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="public/js/app.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
      <script>
           var label_web = {
@@ -395,7 +396,7 @@
                     title:'Whatsapp'
                },
                {
-                    link: 'http://api.whatsapp.com/send?1=pt_BR&phone=5585991013648',
+                    link: 'mailto:name@email.com',
                     icon:'envelope-o',
                     title:'E-mail'
                },
@@ -559,7 +560,7 @@
 
                return "<div class='col-md-3'>" +
                     "<a class='card mb-4 shadow-sm' href='" + item.link + "' target='_blank'>" +
-                    "<img src='img/web/" + item.img + ".png' class='card-img'>" +
+                    "<img src='public/img/web/" + item.img + ".png' class='card-img'>" +
                     "<div class='card-img-overlay'>" +
                     "<h5 class='card-title text-white'>" + item.title + "</h5>" + label +
                     "</div>" +
@@ -570,15 +571,15 @@
           function makeGallery(photo, paste) {
                return "<div class='card rounded-0'>" +
                     "<ul class='list-group list-group-flush'>" +
-                    "<a href='img/" + paste + "/00" + photo + ".jpg' class='lightbox m-0 p-0 list-group-item list-group-item-action d-flex w-100 justify-content-between'>" +
-                    "<img class='card-img rounded-0' src='img/" + paste + "/00" + photo + ".jpg'>" +
+                    "<a href='public/img/" + paste + "/00" + photo + ".jpg' class='lightbox m-0 p-0 list-group-item list-group-item-action d-flex w-100 justify-content-between'>" +
+                    "<img class='card-img rounded-0' src='public/img/" + paste + "/00" + photo + ".jpg'>" +
                     "</a>" +
                     "</ul>" +
                     "</div>";
           }
 
           function socialIcon(item, css = '') {
-               return    "<a href='" + item.link + "' class='mx-1 mb-3 col-md-auto rounded-pill bg-dark text-white " + css + "'" +
+               return    "<a href='" + item.link + "' class='mx-1 mb-3 col-md-auto rounded-0 bg-dark text-white " + css + "'" +
                               "data-toggle='tooltip' title='" + item.title + "'>" +
                                    "<i class='fa fa-" + item.icon + " text-white'></i><span class='d-none text-white'> | " + item.title + "</span>" +
                          "</a>";
@@ -592,7 +593,7 @@
           function makeItemCarrousel(video) {
                height = video.height ? video.height : 260;
                return    "<div class='carousel-item'>" +
-                              "<img src='img/poster/" + video.poster + ".png' class='mx-auto d-block item-video' id='" + video.id + "' data-height='" + height + "' data-toggle='modal' data-target='#modal-video'>" +
+                              "<img src='public/img/poster/" + video.poster + ".png' class='mx-auto d-block item-video' id='" + video.id + "' data-height='" + height + "' data-toggle='modal' data-target='#modal-video'>" +
                          "</div>";
           }
 
@@ -643,7 +644,7 @@
                for (let index = 0; index < social.length; index++) {
                     list += socialIcon(social[index]);
                }
-               $('#social-icons').html(list);
+               $('.social-icons').html(list);
           }
 
           function makeCarrousel() {
@@ -668,12 +669,6 @@
           }
 
      </script>
-     <!-- Plugin JavaScript -->
-     <script src="node_modules/jquery-easing/jquery.easing.min.js"></script>
-
-     <!-- Custom scripts for this template -->
-     <script src="js/resume.min.js"></script>
-
 </body>
 
 </html>
