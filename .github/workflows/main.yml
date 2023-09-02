@@ -29,12 +29,12 @@ jobs:
       - run: npm ci
       - run: npm run build
       
-      - name: Caching ./public path
+      - name: Caching ./src path
         uses: actions/cache/save@v3
-        id: cache-public
+        id: cache-src
         with:
-          path: ./public
-          key: ${{ runner.temp }}--${{ github.run_id }}-public
+          path: ./src
+          key: ${{ runner.temp }}--${{ github.run_id }}-src
 
   # Single deploy job since we're just deploying
   deploy:
@@ -47,23 +47,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Get cache ./public path
-        id: cache-public
+      - name: Get cache ./src path
+        id: cache-src
         uses: actions/cache@v3
         env:
           SEGMENT_DOWNLOAD_TIMEOUT_MINS: 1
         with:
-          path: ./public
-          key: ${{ runner.temp }}--${{ github.run_id }}-public
-
-      - name: Making Publish Path
-        run: mkdir ./_site/ && cp -r ./public/ ./_site/ && cp index.html _site/
+          path: ./src
+          key: ${{ runner.temp }}--${{ github.run_id }}-src
       
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: '.'
         
       - name: Deploy to GitHub Pages
         id: deployment

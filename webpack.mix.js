@@ -8,20 +8,20 @@ mix.webpackConfig({
 .combine([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/jquery-easing/jquery.easing.1.3.js',
-    'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+], 'src/js/vendor.js')
+.combine([
     'js/resume.js'
-], 'public/js/app.js')
-.copy('./img','public/img') 
+], 'src/js/app.js')
 .styles([
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
     'node_modules/font-awesome/css/font-awesome.min.css',
     'css/resume.css'
-], 'public/css/app.css')
-//.sass('scss/resume.scss', 'public/css')
+], 'src/css/app.css')
+//.sass('scss/app.scss', 'src/css/app.css')
 .copy([
     'node_modules/font-awesome/fonts',
-], 'public/fonts') 
-.copy('index.html', 'public')
+], 'src/fonts') 
 .autoload({ jquery: ['$','window.jQuery','jQuery','window.$','jquery','window.jquery'] });
 
 /*
