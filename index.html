@@ -123,7 +123,7 @@
                          <li class="list-group-item">
                               <h4 class="mb-0">Técnico em Desenvolvimento de Sistemas</h4>
                               <div class="text-secondary mb-3 subheading text-uppercase pull-left">
-                                   SENAI - Serviço Nacional de Aprendizagem Industrial
+                                   SENAC - Serviço Nacional de Aprendizagem Comercial
                               </div>
                               <div class="resume-date pull-right small">
                                    <i class="text-secondary">Em andamento</i>
@@ -132,7 +132,7 @@
                          <li class="list-group-item">
                               <h4 class="mb-0">Análise e Desenvolvimento de Sistemas</h4>
                               <div class="text-secondary mb-3 subheading text-uppercase pull-left">
-                                   Uniasselvi - Centro Universitário Leonardo da Vinci
+                                   Descomplica
                               </div>
                               <div class="resume-date pull-right small">
                                    <i class="text-secondary">Em andamento</i>
@@ -191,7 +191,19 @@
                               </h2>
                               <div id="photo-projects" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                      <div class="row" id="portifolio-photo"></div>
+                                        <div class="container">
+                                             <div class="row">
+                                                  <div class="col-12 col-md-6">
+                                                  </div>
+                                                  <div class="col-12 col-md-6 text-center text-md-end">
+                                                       <span class="badge rounded-pill text-bg-dark text-uppercase">Religiosa</span>
+                                                       <span class="badge rounded-pill text-bg-dark text-uppercase">Gastronômica</span>
+                                                       <span class="badge rounded-pill text-bg-dark text-uppercase">Eventos</span>
+                                                       <span class="badge rounded-pill text-bg-dark text-uppercase">Automotiva</span>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="row" id="portifolio-photo"></div>
                                  </div>
                               </div>
                          </div>
@@ -203,6 +215,16 @@
                               </h2>
                               <div id="post-projects" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
+                                   <div class="col-12 col-md-6 text-center text-md-start">
+                                        <a class="btn btn-sm rounded-pill text-bg-dark text-uppercase"
+                                             href="https://www.instagram.com/imaculada.conceicaopavuna/" target="_blank">
+                                             @imaculada.conceicaopavuna
+                                        </a>
+                                        <a class="btn btn-sm rounded-pill text-bg-dark text-uppercase"
+                                             href="https://www.instagram.com/hakosushiblumenau/" target="_blank">
+                                             @hakosushiblumenau
+                                        </a>
+                                   </div>
                                       <div class="row" id="portifolio-media"></div>
                                  </div>
                               </div>
@@ -390,6 +412,11 @@
                     title:'Whatsapp'
                },
                {
+                    link: 'https://www.instagram.com/wagner.sousa.calazans/',
+                    icon:'instagram',
+                    title:'Instagram'
+               },
+               {
                     link: 'mailto:name@email.com',
                     icon:'envelope-o',
                     title:'E-mail'
@@ -545,12 +572,10 @@
           }
 
           function makeGallery(photo, paste) {
-               return "<div class='card rounded-0'>" +
-                    "<ul class='list-group list-group-flush'>" +
-                    "<a href='img/" + paste + "/00" + photo + ".jpg' class='lightbox m-0 p-0 list-group-item list-group-item-action d-flex w-100 justify-content-between'>" +
-                    "<img class='card-img rounded-0' src='img/" + paste + "/00" + photo + ".jpg'>" +
-                    "</a>" +
-                    "</ul>" +
+               return "<div class='col-3'>"+
+                         "<div class='card rounded-0'>" +
+                              "<img class='card-img rounded-0' src='img/" + paste + "/00" + photo + ".jpg'/>" +
+                         "</div>" +
                     "</div>";
           }
 
@@ -599,10 +624,10 @@
 
           function makePortifolioPhoto() {
                var items = '';
-               for (let index = 0; index < 17; index++) {
+               for (let index = 0; index < 20; index++) {
                     items += makeGallery((index + 1), 'photo');
                }
-               $('#portifolio-photo').html(items);
+               $('#portifolio-photo').html('<div class="row row-cols-1 row-cols-md-4 g-3">' + items + '</div>');
                baguetteBox.run('.portifolio-photo');
           }
 
@@ -611,7 +636,7 @@
                for (let index = 0; index < 23; index++) {
                     items += makeGallery((index + 1), 'media');
                }
-               $('#portifolio-media').html(items);
+               $('#portifolio-media').html('<div class="row row-cols-1 row-cols-md-3 g-4">' + items + '</div>');
                baguetteBox.run('.portifolio-media');
           }
 
